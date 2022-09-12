@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSintro</title>
+</head>
+<body>
+
+	<h3>Hello Are you ready to learn JS ???</h3>
+
+	<h1 id="test">Welcome to Javascript</h1>
+
+	<hr/>
+
+	<img src="./img/shame.jpg" id="funny" alt="emoji" />
+
+	<br/><br/>
+
+	<button type="button" onclick="document.getElementById('funny').src='./img/amazing.jpg'">Amazing</button>
+	<button type="button" onclick="document.getElementById('funny').src='./img/bleh.jpg'">Bleh...Bleh</button>
+	<button type="button" onclick="document.getElementById('funny').src='./img/shame.jpg'">Shame</button>
+
+	<hr/>
+	
+	<script type="text/javascript">
+
+
+		// Overwrite (var and let can overwrite / const can't overwrite)
+		let num3 = 30;
+		var num4 = 40;
+
+		console.log("num3 value is = " + num3);
+		console.log("num4 value is = " + num4);
+		console.log(num3 + num4);
+
+		num3 = 50;
+		console.log("num3 value is = " + num3);
+		console.log(num3 + num4);
+
+		let num5 = 50;
+		console.log(num5);
+
+		num5 = 500;
+		console.log(num5);
+
+		var num6 = 60;
+		console.log(num6);
+
+		num6 = 600;
+		console.log(num6);
+
+		const num7 = 70;
+		console.log(num7);
+
+
+		// Concatenate ( + )
+
+		const name1 = "Maung Maung";
+		const name2 = "Kyaw";
+
+		console.log(name1 +" "+name2+" is my friend");
+
+		let greeting = "Hello";
+		let city1 = "Mandalay";
+		let city2 = "Yangon";
+
+		console.log(greeting+" "+city1+" and "+city2);
+		console.log(`${greeting} ${city1} and ${city2}`);
+
+
+		document.write(`${greeting} ${city1} and ${city2}`);
+		document.write("<hr/>");
+		document.write("Hello Myanmar");
+		document.write("<h3>Hello Myanmar</h3>");
+		document.write("<hr/>");
+
+
+		// Special Escape Characters ( \ )
+
+		console.log("hey i am working. do you see now");
+		console.log("hey i am 'working'. do you see now");
+		console.log('hey i am "working". do "you" see now');
+
+		// console.log("hey i am "working". do you see now");	//error
+		// console.log('hey i am 'working'. do you see now');	//error
+
+		console.log("hey i'm working and i'm reading. do you see now.");
+		console.log('he is very tall. about 6ft 4"');
+
+		let x = 'He\'s U Ba, ';
+		let y = "He\'s my \"Uncle\".";
+
+		document.write(`${x} ${y}`);
+
+
+		// console.log(document.getElementById("test"));
+
+		// document.getElementById("test").textContent = "Save Myanmar";
+		// document.getElementById("test").innerText = "Hay Myanmar";
+		// document.getElementById("test").innerHTML = "Hay Thailand";
+
+
+
+	</script>
+</body>
+</html>
