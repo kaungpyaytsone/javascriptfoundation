@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Method</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		
+		// Array Method
+
+		let arrcolors = ["red","black","orange","tomato","violet"];
+
+		console.log(arrcolors);
+		console.log(arrcolors.length);
+		console.log(arrcolors[3]);
+		console.log(arrcolors.indexOf("violet"));
+		console.log(Array.isArray(arrcolors));
+
+		console.log(arrcolors);
+		console.log("Array to string toString = " ,arrcolors.toString());
+		console.log("Array to string join = " ,arrcolors.join("*"));
+
+		const n = ["red","black","green","silver"];
+
+		n[4] = "blue";
+		n[1] = "pink";
+
+		// Add new value to array (addon to the end)
+		// push()
+		n.push("gold");
+		n.push("orange");
+		n.push("violet","white");
+
+
+		// Add new value to array (addon to front)
+		// unshift()
+		n.unshift("tomato");
+		n.unshift("steelblue");
+		n.unshift("grey","skyblue");
+
+		//Remove value & index (take off from front)
+		// shift()
+		n.shift();
+		n.shift();
+
+		//Remove value & index (take off from end)
+		// pop()
+		n.pop();
+		n.pop();
+
+		console.log(n);
+
+
+
+
+	</script>
+</body>
+</html>

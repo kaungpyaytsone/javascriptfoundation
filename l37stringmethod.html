@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method</title>
+</head>
+<body>
+
+	<div>
+		<h1 id="mm">Hello Myanmar</h1>
+		<h1 id="th">Hello Thailand</h1>
+	</div>
+	
+	<script type="text/javascript">
+		
+		// String Method
+
+		let firstname = "Maung Maung";
+		let lastname = "kyaw";
+
+		console.log(firstname);
+		console.log(lastname);
+		console.log(firstname.length);
+
+		// Concat (String + )
+		let fullname = firstname + " " +lastname;
+		console.log(fullname);
+
+		// concat();
+		var fstname = "Zayar ";
+		var lstname = "Kyaw";
+		var myname = fstname.concat(lstname);
+		console.log(myname);
+
+		// Append (String +=)
+		let name1 = "Zaw ";
+		let name2 = "Myo";
+
+		// let fname = name1 + name2;
+		// let fname = name1.concat(name2);
+		// console.log(fname);
+
+		name1 += name2;
+		console.log(name1);
+
+
+		var nickname = "kyaw ko ko";
+		console.log(nickname.length);
+		console.log(nickname[5]);
+
+		console.log(nickname[nickname.length-1]);
+
+		// charAt()
+		console.log(nickname[5]);
+		console.log(nickname.charAt(5)); // same with index number
+		console.log(nickname.charAt(nickname.length-1));
+
+		// includes()
+		let fav = "My fav color is black color";
+		console.log(fav);
+		console.log(fav.includes("black")); //result = true
+		console.log(fav.includes("red"));	//result = false
+		console.log(fav.includes("BLACK"));	//result = false
+		console.log(fav.includes("Black"));	//result = false
+		console.log(fav.includes("bla"));	//result = true
+
+		// replace(old,new)
+		console.log(fav.replace("black","blue"));
+		console.log(fav.replace("bla","red"));
+		console.log(fav.replace("color","parpar"));
+
+		// substring(index,length)
+		console.log(fav.substring(0,10)+"....");
+		console.log(fav.substring(0,10).concat('......'));
+
+
+		// Change Case
+		console.log(fav.toUpperCase());
+		console.log(fav.toLowerCase());
+
+		// Style
+		document.getElementById('mm').style.color = "green";
+		document.getElementById('mm').style.fontSize = "50px";
+
+		document.getElementById('th').style.color = "blue";
+		document.getElementById('th').style.fontFamily = "Arial";
+
+	</script>
+</body>
+</html>
